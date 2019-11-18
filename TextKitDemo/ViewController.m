@@ -10,6 +10,7 @@
 #import "DemoOneViewController.h"
 #import "DemoTwoViewController.h"
 #import "MXDemoThreeViewController.h"
+#import "MXFourViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -20,6 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.view.backgroundColor = UIColor.whiteColor;
     // Do any additional setup after loading the view.
     [self.view addSubview:self.tableView];
@@ -37,7 +39,7 @@
 
 #pragma mark --
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -46,8 +48,10 @@
         cell.textLabel.text = @"入门";
     } else if (indexPath.row == 1) {
         cell.textLabel.text = @"进阶";
-    } else {
+    } else if (indexPath.row == 2) {
         cell.textLabel.text = @"图文混排";
+    } else {
+        cell.textLabel.text = @"动态高度计算";
     }
     return cell;
 }
@@ -57,8 +61,10 @@
         [self.navigationController pushViewController:[DemoOneViewController new] animated:YES];
     } else if (indexPath.row == 1) {
         [self.navigationController pushViewController:[DemoTwoViewController new] animated:YES];
-    } else {
+    } else if (indexPath.row == 2) {
         [self.navigationController pushViewController:[MXDemoThreeViewController new] animated:YES];
+    } else {
+        [self.navigationController pushViewController:[MXFourViewController new] animated:YES];
     }
 }
 @end

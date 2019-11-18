@@ -36,6 +36,7 @@
 		FDB8B4E2237599100082E973 /* MXLabelKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB8B4E1237599100082E973 /* MXLabelKeyBoard.m */; };
 		FDB8B4E5237672490082E973 /* MXLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB8B4E4237672490082E973 /* MXLabelCell.m */; };
 		FDE08F762378F1130051C90A /* MXTextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE08F752378F1130051C90A /* MXTextManager.m */; };
+		FDE08F7D237A50F90051C90A /* MXFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE08F7C237A50F90051C90A /* MXFourViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,8 @@
 		FDB8B4E4237672490082E973 /* MXLabelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXLabelCell.m; sourceTree = "<group>"; };
 		FDE08F742378F1130051C90A /* MXTextManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXTextManager.h; sourceTree = "<group>"; };
 		FDE08F752378F1130051C90A /* MXTextManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXTextManager.m; sourceTree = "<group>"; };
+		FDE08F7B237A50F90051C90A /* MXFourViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXFourViewController.h; sourceTree = "<group>"; };
+		FDE08F7C237A50F90051C90A /* MXFourViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MXFourViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +164,7 @@
 		FDA1ED59236DD2FD0001C7E6 /* TextKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FDE08F77237A507C0051C90A /* Demo4 */,
 				FDB8B4CA2372BE630082E973 /* Demo3 */,
 				FDB8B4C22371125E0082E973 /* Demo2 */,
 				FDA1ED98236FD6AA0001C7E6 /* Demo1 */,
@@ -309,6 +313,39 @@
 				FDB8B4E1237599100082E973 /* MXLabelKeyBoard.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		FDE08F77237A507C0051C90A /* Demo4 */ = {
+			isa = PBXGroup;
+			children = (
+				FDE08F7A237A50970051C90A /* Model */,
+				FDE08F79237A50900051C90A /* View */,
+				FDE08F78237A50880051C90A /* ViewController */,
+			);
+			path = Demo4;
+			sourceTree = "<group>";
+		};
+		FDE08F78237A50880051C90A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FDE08F7B237A50F90051C90A /* MXFourViewController.h */,
+				FDE08F7C237A50F90051C90A /* MXFourViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FDE08F79237A50900051C90A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FDE08F7A237A50970051C90A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,6 +500,7 @@
 				FDA1ED94236DD53F0001C7E6 /* MXLabel.m in Sources */,
 				FDA1ED5C236DD2FD0001C7E6 /* AppDelegate.m in Sources */,
 				FDA1ED6D236DD2FE0001C7E6 /* main.m in Sources */,
+				FDE08F7D237A50F90051C90A /* MXFourViewController.m in Sources */,
 				FDA1ED5F236DD2FD0001C7E6 /* SceneDelegate.m in Sources */,
 				FDB8B4D92372F92B0082E973 /* MXEmojiCell.m in Sources */,
 			);
